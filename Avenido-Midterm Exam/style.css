@@ -1,0 +1,247 @@
+
+
+body, th {
+    text-align: center;
+}
+
+.ig {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#home {
+
+
+
+}
+
+table {
+    margin: 10px 10px;
+}
+
+h3 {
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+ h1 {
+    font-size: 85px;
+ }
+
+
+a {
+    padding: 10px 12px;
+    margin: 2px 2px;
+}
+
+h1, h2, h3, p,th,td {
+    font-family: monospace;
+}
+
+p {
+    color: black;
+}
+
+footer {
+    background-color: #658354;
+ 
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+a {
+    font-family: monospace;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+
+.gallery {
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 20px;
+    border: 25px solid gray;
+    margin: auto;
+
+}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* for image gallery */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+
+  .im-gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.im-gal>li {
+    flex-basis: 350px;
+}
+
+.im-gal li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none
+}
+
+#buttons {
+    background-color:#658354;
+    padding: 8px 5px;
+
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.container>* {
+    padding: 10px;
+    flex: 1 100%;
+
+}
+
+.button-class {
+
+}
+
+.home-class {
+    background-image: url(homebg.jpg);
+background-repeat: no-repeat;
+background-position:50%;
+background-size:cover;
+position: contain; 
+}
+
+@media all and (min-width:800px) {
+
+}
+
+
+@media all and (min-width: 600px) {
+
+
+}
+

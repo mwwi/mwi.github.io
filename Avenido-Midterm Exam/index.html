@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> AVENIDO MIDTERM </title>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <center>
+            <section class="button-class">
+                <section id="buttons">
+                    <center>
+                    <a href="#"> <img src="logo1.jpg" width="60" height="60"></a>
+                </center>
+                    <a href="#home"> Home </a>
+                    <a href="#blog"> Blog </a>
+                    <a href="#cont"> Contact </a>
+        </center>
+        </section>
+        </section>
+        <section class="home-class">
+
+            <section id="home">
+                <content>
+                    <h1 style="color: white;"> Survival </h1>
+                    <p style="color: white;"> What this means is that we exist to help protect our environment and do numbers of ways. </p>
+                    <button type="button">Learn More</button>
+            </section>
+            </content>
+        </section>
+
+        <section class="blog-class">
+            <section id="blog">
+                <h1>Latest Articles</h1>
+                <h3>Breaking news from the wild!</h3>
+                <ul class="im-gal"></ul>
+
+                <li>
+                    <img id="myImg" src="deer1.jpg" width="200" height="200">
+                    <img id="myImg" src="deer2.jpg" width="200" height="200">
+                    <img id="myImg" src="deer3.jpg" width="200" height="200">
+                </li>
+
+
+                <li>
+                    <img id="myImg" src="sq1.jpg" width="200" height="200">
+                    <img id="myImg" src="sq2.jpg" width="200" height="200">
+                    <img id="myImg" src="sq3.jpg" width="200" height="200">
+                </li>
+
+
+                <li>
+                    <img id="myImg" src="bird1.jpg" width="200" height="200">
+                    <img id="myImg" src="bird2.jpg" width="200" height="200">
+                    <img id="myImg" src="bird3.jpg" width="200" height="200">
+                </li>
+
+
+            </section>
+        </section>
+
+
+
+        <section class="cont-class">
+            <section id="cont">
+
+                <h1>Get notified about new amazing articles</h1>
+
+
+                <p>
+                    <label for="email">Email:</label>
+                    <br />
+                    <textarea name="message" id="message" style="height: 20px; width: 500px;"
+                        onclick="this.value=''">Enter text here...</textarea>
+                </p>
+                <button type="button">Send</button>
+            </section>
+        </section>
+
+        <footer class="footer-class">
+            <footer>
+                <center>
+                    <table>
+
+                        <tr>
+                            <td>
+                                <img src="logo1.jpg" width="60" height="60">
+                            </td>
+
+                            <td>
+                                <h3> Articles</h3>
+                            </td>
+
+                            <td>
+                                <h3>About Us</h3>
+                            </td>
+
+                            <td>
+                                <h3>Learn More</h3>
+                            </td>
+
+                            <td>
+                                <h3> Social Media </h3>
+                            <td> <img src="fb.png" width="30" height="30"> </td>
+                            <td> <img src="insta.png" width="30" height="30"> </td>
+                            <td> <img src="pin.png" width="40" height="42"> </td>
+
+                            </td>
+
+                    </table>
+                </center>
+            </footer>
+        </footer>
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+
+        document.addEventListener("click", (e) => {
+            const elem = e.target;
+            if (elem.id === "myImg") {
+                modal.style.display = "block";
+                modalImg.src = elem.dataset.biggerSrc || elem.src;
+                captionText.innerHTML = elem.alt;
+            }
+        })
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
